@@ -1,0 +1,830 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Header and Navigation Styling */
+
+header {
+    background-color: rgb(5, 5, 16);
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header .logo {
+    padding-left: 40px;
+    padding-top: 10px;
+    float: left;
+}
+
+header nav {
+    position: relative;
+    float: left;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 5px;
+    padding-top: 5px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.pepper-them {
+    color: white;
+    float: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 8px 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* End Of Header and Navigation Styling */
+
+/* Content Grid Styling */
+
+#content {
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    margin-top: 150px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, minmax(100px, auto));
+
+}
+
+#content div {
+    background-color: white;
+    padding: 5px;
+    border: none;
+}
+
+.one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.two {
+    grid-column: 3/4;
+    grid-row: 1/1;
+
+
+}
+
+.three {
+    grid-column: 4/6;
+    grid-row: 1/3;
+}
+
+.four {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.five {
+    grid-column: 1/3;
+}
+
+img {
+    max-width: 100%;
+}
+
+#content .one .little-headline {
+    font-size: 14px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 2px solid #8c8c8c;
+    padding-bottom: 3px;
+}
+
+#content .one .main-headline {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+    color: rgb(33, 117, 190);
+    padding-top: 2;
+}
+
+#content .two .little-headline {
+    font-size: 14px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 2px solid #8c8c8c;
+    padding-bottom: 3px;
+}
+
+#content .two .main-headline {
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 20px;
+    color: rgb(33, 117, 190);
+
+    padding-top: 2;
+}
+
+#content .three .top-link {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid #8c8c8c;
+    text-transform: uppercase;
+    font-size: 12px;
+
+
+}
+
+#content .three .link-lists a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+
+
+}
+
+#content .four .little-headline {
+    font-size: 14px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 2px solid #8c8c8c;
+    padding-bottom: 3px;
+}
+
+#content .four .main-headline {
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 20px;
+    color: rgb(33, 117, 190);
+}
+
+#content .five .little-headline {
+    font-size: 14px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 2px solid #8c8c8c;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#content .five .main-headline {
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 20px;
+    color: rgb(33, 117, 190);
+    float: left;
+    padding-left: 5px;
+
+}
+
+#content .five img {
+    float: left;
+}
+
+/* End of content Grid Styles */
+
+/* Start of Second-container styling */
+
+#second-container {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 20px;
+    margin-top: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    background-color: white;
+    padding: 60px;
+
+}
+
+#second-container div {
+    background-color: white;
+    padding: 5px;
+    border: none;
+
+}
+
+.six {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.links {
+    grid-column: 3/4;
+}
+
+.adverts {
+    grid-column: 4/5;
+}
+
+.headline {
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#second-container .six .main-headline {
+    font-size: 22px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#second-container .six .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding-top: 12px;
+
+}
+
+#second-container .links .main-headline {
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#second-container .links .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+
+}
+/* End of second-container styles */
+
+/* Third-container styles */
+
+#third-container {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 20px;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    background-color: white;
+    padding: 60px;
+
+}
+
+#third-container div {
+    background-color: white;
+    padding: 5px;
+    border: none;
+
+}
+.eight{
+    grid-column: 1/2;
+}
+
+.nine{
+    grid-column: 2/3;
+}
+
+.ten {
+    grid-column: 3/4;
+}
+
+#third-container .eight .main-headline {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#third-container .eight .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding-top: 10px;
+
+}
+
+#third-container .nine .main-headline {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#third-container .nine .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding-top: 10px;
+
+}
+
+#third-container .ten .main-headline {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#third-container .ten .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding: 10px;
+
+}
+/* End of third-container styles */
+
+/* fourth-container styling */
+
+#fourth-container {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 20px;
+    margin-top: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    background-color: white;
+    padding: 60px;
+}
+
+#fourth-container  div {
+    background-color: white;
+    padding: 5px;
+    border: none;
+}
+
+.eleven {
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.twelve {
+    grid-column: 3/4;
+}
+
+.thirteen {
+    grid-column: 4/6;
+    grid-row: 1/4;
+}
+
+.fourteen {
+    grid-column: 3/4;
+}
+
+#fourth-container .eleven .little-headline {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    padding: 15px;
+
+
+}
+
+#fourth-container .eleven .main-headline {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 30px;
+    color: black;
+    float: left;
+    padding-left: 20px;
+
+
+}
+
+#fourth-container .twelve .little-headline {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    padding: 15px;
+
+}
+
+#fourth-container .twelve .main-headline {
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 30px;
+    color: black;
+    padding-left: 5px;
+
+
+}
+
+
+
+#fourth-container .thirteen .news-contents {
+    display: flex;
+}
+
+#fourth-container .thirteen .main-headline {
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 30px;
+    color: black;
+    padding-left: 10px;
+
+
+}
+
+#fourth-container .thirteen .main-headline {
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 30px;
+    color: black;
+    padding-left: 5px;
+
+
+}
+
+#fourth-container .thirteen .little-headline {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    text-transform: uppercase;
+
+
+}
+
+#fourth-container .fourteen .main-headline {
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 30px;
+    color: black;
+    padding-left: 5px;
+
+
+}
+
+#fourth-container .fourteen .little-headline {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    text-transform: uppercase;
+
+
+}
+/* End of fourth-container styles */
+
+/* Fifth-container styling */
+
+#fifth-container {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 20px;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    background-color: white;
+    padding: 60px;
+
+}
+
+#fifth-container div {
+    background-color: white;
+    padding: 5px;
+    border: none;
+
+}
+
+.fifteen {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.sixteen {
+    grid-column: 2/3;
+}
+
+.seventeen{
+    grid-column: 3/4;
+}
+
+#fifth-container .fifteen .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding-top: 10px;
+
+}
+
+#fifth-container .fifteen .main-headline {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#fifth-container .sixteen .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding-top: 10px;
+
+}
+
+#fifth-container .sixteen .main-headline {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+#fifth-container .seventeen .little-headline {
+    font-size: 9px;
+    color: rgb(33, 117, 190);
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding: 10px;
+
+}
+
+#fifth-container .seventeen .main-headline {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+    color: black;
+    float: left;
+    padding-left: 5px;
+
+}
+
+/* End Of fifth-container styling */
+
+
+/* Responsiveness */
+/*  
+
+@media screen and  (min-width:400px){
+    header {
+        background-color: rgb(5, 5, 16);
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    } 
+    header nav {
+        display: none;
+
+    
+    }
+    #content {
+        display: block;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-gap: 20px;
+        margin-top: 150px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, minmax(100px, auto));
+        margin: 30px;
+    
+    }
+    img{
+        max-width: 100%;
+    }
+
+    #second-container,#third-container, #fourth-container, #fifth-container{
+        display: block;
+        margin-top:20px;
+        overflow-wrap: break-word;
+    }
+    #second-container,#third-container, #fourth-container, #fifth-container div{
+        padding: 20px;
+    }
+    
+    .headline {
+        
+        text-transform: uppercase;
+        font-size: 15px;
+        text-decoration: underline;
+        margin-top: 60px;
+        float: left;
+    }
+}
+@media screen and  (min-width:700px){
+    header {
+        background-color: rgb(5, 5, 16);
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    } 
+    header nav {
+        display: none;
+
+    
+    }
+    #content {
+        display: grid;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-gap: 20px;
+        margin-top: 150px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, minmax(100px, auto));
+        margin: 30px;
+    
+    }
+
+    #second-container,#third-container, #fourth-container, #fifth-container{
+        display: grid;
+        margin-top:20px;
+    }
+    .one, .two, .three, .four, .five{
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
+    .adverts {
+        grid-column: 4/5;
+        display: none;
+    }
+    
+}
+@media screen and  (min-width:700px){
+    header {
+        background-color: rgb(5, 5, 16);
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    } 
+    header nav {
+        display: none;
+
+    
+    }
+    #content {
+        display: grid;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-gap: 20px;
+        margin-top: 150px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, minmax(100px, auto));
+        margin: 30px;
+    
+    }
+
+    #second-container,#third-container, #fourth-container, #fifth-container{
+        display: grid;
+        margin-top:20px;
+    }
+    .one, .two, .three, .four, .five{
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
+    .adverts {
+        grid-column: 4/5;
+        display: none;
+    }
+    
+}
+@media screen and  (min-width:1400px){
+    header {
+        background-color: rgb(5, 5, 16);
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    } 
+   
+    #content {
+        display: grid;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-gap: 20px;
+        margin-top: 150px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, minmax(100px, auto));
+        margin: 30px;
+    
+    }
+
+    #second-container,#third-container, #fourth-container, #fifth-container{
+        display: grid;
+        margin-top:20px;
+    }
+    .one, .two, .three, .four, .five{
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
+    .adverts {
+        grid-column: 4/5;
+        display: none;
+    }
+    
+}*/
+
